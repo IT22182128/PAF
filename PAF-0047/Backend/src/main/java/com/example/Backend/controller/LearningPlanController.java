@@ -29,14 +29,14 @@ public class LearningPlanController {
         return new ResponseEntity<>(created, HttpStatus.CREATED);
     }
 
-    // Get all learning plans
+    
     @GetMapping
     public ResponseEntity<List<LearningPlan>> getAllLearningPlans() {
         List<LearningPlan> plans = learningPlanService.getAllLearningPlans();
         return new ResponseEntity<>(plans, HttpStatus.OK);
     }
 
-    // Get a learning plan by ID
+    
     @GetMapping("/{id}")
     public ResponseEntity<LearningPlan> getLearningPlanById(@PathVariable String id) {
         LearningPlan plan = learningPlanService.getLearningPlanById(id);
