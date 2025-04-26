@@ -43,7 +43,7 @@ public class UserController {
             user.setEmail(userUpdateDTO.getEmail());
         }
 
-        // Update name if provided
+        
         if (userUpdateDTO.getName() != null && !userUpdateDTO.getName().trim().isEmpty()) {
             user.setName(userUpdateDTO.getName());
         }
