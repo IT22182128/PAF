@@ -15,7 +15,6 @@ import java.util.Optional;
 @RequestMapping("/api/user")
 @CrossOrigin(origins = "http://localhost:5173")
 public class UserController {
-
     @Autowired
     private UserRepository userRepository;
 
@@ -49,7 +48,7 @@ public class UserController {
             user.setName(userUpdateDTO.getName());
         }
 
-        // Save updated user
+        
         try {
             User updatedUser = userRepository.save(user);
             return ResponseEntity.ok(updatedUser);
