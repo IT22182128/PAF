@@ -12,7 +12,6 @@ export default function RegisterPage({ onNavigateToLogin }) {
     password: "",
     confirmPassword: "",
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
