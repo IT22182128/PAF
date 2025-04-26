@@ -50,7 +50,7 @@ public class LearningPlanController {
         return new ResponseEntity<>(plans, HttpStatus.OK);
     }
 
-    // Update a learning plan
+    
     @PutMapping("/{id}")
     public ResponseEntity<LearningPlan> updateLearningPlan(
             @PathVariable String id,
