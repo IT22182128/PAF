@@ -49,8 +49,6 @@ public class LearningPlanController {
         List<LearningPlan> plans = learningPlanService.getLearningPlansByUserId(userId);
         return new ResponseEntity<>(plans, HttpStatus.OK);
     }
-
-    
     @PutMapping("/{id}")
     public ResponseEntity<LearningPlan> updateLearningPlan(
             @PathVariable String id,
