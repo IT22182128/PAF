@@ -302,7 +302,7 @@ export default function Dashboard() {
       </header>
 
       <main className="dashboard-content">
-        <h2 className="dashboard-title">Your LearnVibe Dashboard</h2>
+        <h2 className="dashboard-title">Your SkillHive Dashboard</h2>
 
         <div className="dashboard-grid">
           <div
