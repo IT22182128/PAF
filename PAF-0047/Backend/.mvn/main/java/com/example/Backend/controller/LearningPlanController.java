@@ -19,7 +19,7 @@ public class LearningPlanController {
     @Autowired
     private LearningPlanService learningPlanService;
 
-    
+    // Create a learning plan for a specific user
     @PostMapping("/user/{userId}")
     public ResponseEntity<LearningPlan> createLearningPlanForUser(
             @PathVariable String userId,
